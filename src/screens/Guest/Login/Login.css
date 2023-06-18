@@ -1,0 +1,136 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Root
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+@import url("./../../../css/root.css");
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Login
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Login {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(193, 190, 255);
+}
+.Login .card {
+  position: relative;
+  width: 800px;
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  min-height: 600px;
+}
+@media (max-width: 772px) {
+  .Login .card {
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0;
+    height: 100vh;
+  }
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Login left
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Login .card .left {
+  position: relative;
+  width: 100%;
+  background-image: url(https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600);
+  background-size: cover;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  color: white;
+  border-radius: 10px 0 0 10px;
+}
+@media (max-width: 772px) {
+  .Login .card .left {
+    border-radius: 0;
+    height: 100%;
+  }
+}
+.Login .card .left::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(39, 11, 96, 0.5);
+  top: 0;
+  left: 0;
+  border-radius: 10px 0 0 10px;
+}
+.Login .card .left h1 {
+  position: relative;
+  font-size: 100px;
+  margin: 0;
+  line-height: normal;
+}
+.Login .card .left p {
+  position: relative;
+  color: #eee;
+}
+.Login .card .left span {
+  position: relative;
+  font-size: 14px;
+}
+.Login .card .left a {
+  position: relative;
+  background-color: #fff;
+  padding: 8px 15px;
+  width: fit-content;
+  min-width: 300px;
+  max-width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--main-transition);
+  font-weight: bold;
+}
+.Login .card .left a:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Login right
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Login .card .right {
+  position: relative;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+}
+@media (max-width: 772px) {
+  .Login .card .right {
+    border-radius: 0;
+    height: 100%;
+  }
+}
+.Login .card .right h1 {
+  color: #555;
+}
+.Login .card .right form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Login .card .right form input {
+  border: none;
+  border-bottom: 1px solid lightgray;
+  padding: 20px 10px;
+}
+.Login .card .right form button {
+  width: 100%;
+  padding: 8px;
+  border: 0;
+  cursor: pointer;
+  background-color: #938eef;
+  color: #fff;
+  font-weight: bold;
+}
