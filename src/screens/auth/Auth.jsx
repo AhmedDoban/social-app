@@ -1,9 +1,18 @@
 import React from "react";
+import Navbar from "../../Components/Navbar/Navbar";
+import Sidebar from "../../Components/Sidebar/Sidebar";
+import "./Auth.css"
+function Auth({ SetAuthUser }) {
+  /*************Logout***************** */
+  const HandleLogOut = () => {
+    localStorage.clear();
+    SetAuthUser(false);
+  };
 
-function Auth() {
   return (
     <div className="Auth">
-      <h1>Auth</h1>
+      <Navbar HandleLogOut={HandleLogOut} />
+      <Sidebar />
     </div>
   );
 }

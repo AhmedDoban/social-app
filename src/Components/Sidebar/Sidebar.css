@@ -1,0 +1,83 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Root
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+@import url("./../../css/root.css");
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Root
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Sidebar {
+  position: sticky;
+  flex: 2;
+  width: 250px;
+  top: 50px;
+  height: calc(100vh - 50px);
+  overflow: hidden;
+  overflow-y: auto;
+  border-right: 1px solid lightgrey;
+}
+@media (max-width: 992px) {
+  .Sidebar {
+    width: fit-content;
+  }
+}
+.Sidebar::-webkit-scrollbar {
+  width: 0px;
+}
+.Sidebar .menu {
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  transition: var(--main-transition);
+  width: 100%;
+}
+.Sidebar .menu:not(:last-child) {
+  border-bottom: 1px solid lightgrey;
+}
+.Sidebar .menu > span {
+  position: relative;
+  font-weight: bold;
+  color: var(--black-color);
+  margin-bottom: 15px;
+  transition: var(--main-transition);
+}
+@media (max-width: 992px) {
+  .Sidebar .menu > span {
+    display: none;
+  }
+}
+.Sidebar .menu .data {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: var(--main-transition);
+}
+.Sidebar .menu .data img {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.Sidebar .menu .data span {
+  position: relative;
+  color: var(--black-color);
+  font-weight: 600;
+  transition: var(--main-transition);
+}
+
+.Sidebar .menu .data p {
+  position: relative;
+  font-weight: bold;
+  color: var(--main-color);
+}
+@media (max-width: 992px) {
+  .Sidebar .menu .data span,
+  .Sidebar .menu .data p {
+    display: none;
+  }
+}

@@ -2,10 +2,12 @@ import React from "react";
 import "./Login.css";
 import { Link } from "react-router-dom";
 
-function Login() {
-  const handleLogin = () => {
-    alert("Login");
+function Login({ SetAuthUser }) {
+  const HandleLogin = () => {
+    localStorage.setItem("Login", true);
+    SetAuthUser(true);
   };
+
   return (
     <div className="Login">
       <div className="card">
@@ -26,7 +28,7 @@ function Login() {
           <form>
             <input type="text" placeholder="Username" />
             <input type="password" placeholder="Password" />
-            <button onClick={handleLogin}>Login</button>
+            <button onClick={() => HandleLogin()}>Login</button>
           </form>
         </div>
       </div>

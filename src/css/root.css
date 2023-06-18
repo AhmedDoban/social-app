@@ -1,5 +1,8 @@
 :root {
   --main-color: #0075ff;
+  --white-color: #fff;
+  --black-color: #1d1d1d;
+  --black-color-alt: #11111111;
   --main-transition: all 0.5s ease-in-out;
 }
 * {
@@ -85,12 +88,6 @@ html {
   color: #fff;
   bottom: 15px;
   right: 15px;
-  border-radius: var(--main-border-radius);
+  border-radius: 50%;
   cursor: pointer;
-}
-
-/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
-# main-titel
-ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
-.main-titel {
 }

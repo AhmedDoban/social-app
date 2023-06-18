@@ -1,0 +1,92 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Root
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+@import url("./../../css/root.css");
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Navbar
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid lightgray;
+  height: 50px;
+  background-color: var(--white-color);
+  transition: var(--main-transition);
+}
+
+.Navbar .left .icon h1 {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--main-color);
+}
+.Navbar .left,
+.Navbar .center,
+.Navbar .right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.Navbar .center {
+  border: 1px solid lightgray;
+  padding: 4px 12px;
+  border-radius: 5px;
+}
+@media (max-width: 992px) {
+  .Navbar .center {
+    display: none;
+  }
+}
+.Navbar .center input {
+  min-width: 350px;
+  padding: 4px 12px;
+  border: 0;
+  color: var(--black-color);
+  background-color: var(--white-color);
+  transition: var(--main-transition);
+}
+.Navbar .IconHandelarStyle {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  color: var(--black-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--main-transition);
+}
+
+.Navbar .right .userInfo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.Navbar .right .userInfo img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.Navbar .right .userInfo p {
+  font-weight: bold;
+  color: var(--black-color);
+  transition: var(--main-transition);
+}
+@media (max-width: 992px) {
+  .Navbar .right .userInfo p {
+    display: none;
+  }
+}
