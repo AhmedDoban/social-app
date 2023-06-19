@@ -3,7 +3,7 @@ import "./Home.css";
 import Stories from "../Stories/Stories";
 import AllPosts from "../Posts/AllPosts";
 
-function Home() {
+function Home({ HandleToTheTop, BacktoTop }) {
   return (
     <div className="Home">
       <Stories />

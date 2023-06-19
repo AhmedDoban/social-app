@@ -32,7 +32,7 @@
 }
 .Stories .story .AddNewStory {
   position: absolute;
-  z-index: 999;
+  z-index: 9;
   bottom: 10px;
   left: 10px;
   border-radius: 50%;

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Profile.css";
+import AllPosts from "./../Posts/AllPosts";
 function Profile() {
   return (
     <div className="Profile">
@@ -23,41 +24,43 @@ function Profile() {
               <i className="fa-brands fa-facebook-f" />
             </a>
             <a href="">
-              <i class="fa-brands fa-instagram" />
+              <i className="fa-brands fa-instagram" />
             </a>
             <a href="">
-              <i class="fa-brands fa-twitter" />
+              <i className="fa-brands fa-twitter" />
             </a>
             <a href="">
-              <i class="fa-brands fa-linkedin-in" />
+              <i className="fa-brands fa-linkedin-in" />
             </a>
             <a href="">
-              <i class="fa-brands fa-github" />
+              <i className="fa-brands fa-github" />
             </a>
           </div>
           {/******************** other -  info*******************/}
           <div className="other-info">
             <p>
-              <i class="fa-solid fa-location-dot" />
+              <i className="fa-solid fa-location-dot" />
               <span>Cairo</span>
             </p>
             <p>
-              <i class="fa-solid fa-earth-americas" />
+              <i className="fa-solid fa-earth-americas" />
               <span>Egypt</span>
             </p>
           </div>
           {/******************** other -  info*******************/}
           <div className="other-info">
             <p>
-              <i class="fa-regular fa-envelope"></i>
+              <i className="fa-regular fa-envelope"></i>
             </p>
             <button>Follow</button>
             <p>
-              <i class="fa-solid fa-ellipsis-vertical"></i>
+              <i className="fa-solid fa-ellipsis-vertical"></i>
             </p>
           </div>
         </div>
       </div>
+      {/********************* Posts  ************************* */}
+      <AllPosts />
     </div>
   );
 }
