@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import Auth from "./screens/auth/Auth";
-import Guest from "./screens/Guest/Guest";
-
+import React, { Suspense, useEffect, useState, lazy } from "react";
+import Loading from "./Components/Loading/Loading";
+const Auth = lazy(() => import("./screens/auth/Auth"));
+const Guest = lazy(() => import("./screens/Guest/Guest"));
 function App() {
   const [AuthUser, SetAuthUser] = useState(false);
 
@@ -13,13 +13,15 @@ function App() {
 
   return (
     <React.Fragment>
-      <div className="app">
-        {AuthUser ? (
-          <Auth SetAuthUser={SetAuthUser} />
-        ) : (
-          <Guest SetAuthUser={SetAuthUser} />
-        )}
-      </div>
+      <Suspense fallback={<Loading />}>
+        <div className="app">
+          {AuthUser ? (
+            <Auth SetAuthUser={SetAuthUser} />
+          ) : (
+            <Guest SetAuthUser={SetAuthUser} />
+          )}
+        </div>
+      </Suspense>
     </React.Fragment>
   );
 }

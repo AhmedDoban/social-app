@@ -1,15 +1,18 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
-import Login from "./Login/Login";
-import Register from "./Register/Register";
+import Loading from "../../Components/Loading/Loading";
+const Login = lazy(() => import("./Login/Login"));
+const Register = lazy(() => import("./Register/Register"));
 
 function Guest({ SetAuthUser }) {
   return (
     <div className="Guest">
-      <Routes>
-        <Route path="/" element={<Login SetAuthUser={SetAuthUser} />} />
-        <Route path="Register" element={<Register />} />
-      </Routes>
+      <Suspense fallback={<Loading />}>
+        <Routes>
+          <Route path="/" element={<Login SetAuthUser={SetAuthUser} />} />
+          <Route path="Register" element={<Register />} />
+        </Routes>
+      </Suspense>
     </div>
   );
 }
