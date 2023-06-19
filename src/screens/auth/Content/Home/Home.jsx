@@ -1,10 +1,11 @@
 import React from "react";
 import "./Home.css";
+import Stories from "../Stories/Stories";
 
 function Home() {
   return (
     <div className="Home">
-      <h1>Home Content</h1>
+      <Stories />
     </div>
   );
 }

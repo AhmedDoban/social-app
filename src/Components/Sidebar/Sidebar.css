@@ -59,17 +59,23 @@
   padding: 8px 4px;
   border-radius: 5px;
 }
-.Sidebar .menu .data:hover {
+.Sidebar .menu .data:not(:first-child):hover {
   background-color: var(--black-color);
 }
-.Sidebar .menu .data:hover span {
+.Sidebar .menu .data:not(:first-child):hover span {
   color: var(--white-color);
 }
-.Sidebar .menu .data img {
+.Sidebar .menu .data:first-child img {
   position: relative;
   width: 35px;
   height: 35px;
   border-radius: 50%;
+  object-fit: cover;
+}
+.Sidebar .menu .data:not(:first-child) img {
+  position: relative;
+  width: 25px;
+  height: 25px;
   object-fit: cover;
 }
 .Sidebar .menu .data span {
