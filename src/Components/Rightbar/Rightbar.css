@@ -65,6 +65,7 @@
   flex-direction: column;
 }
 .rightBar .Box .user {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -105,4 +106,13 @@
 }
 .rightBar .Box .user .buttons button.dismiss {
   background-color: #ff0000;
+}
+.rightBar .Box .user .online {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0px;
+  right: 5px;
+  background-color: lightgreen;
+  border-radius: 50%;
 }
