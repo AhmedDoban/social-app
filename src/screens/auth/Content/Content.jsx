@@ -9,7 +9,7 @@ function Content() {
       <Routes>
         <Route path="/" element={<Outlet />}>
           <Route path="" element={<Home />} />
-          <Route path=":id" element={<Profile />} />
+          <Route path="profile/:id" element={<Profile />} />
         </Route>
       </Routes>
     </React.Fragment>

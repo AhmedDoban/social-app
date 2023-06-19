@@ -13,6 +13,7 @@
   height: 250px;
   border-radius: 5px;
   overflow: hidden;
+  transition: var(--main-transition);
 }
 
 .Stories img {
@@ -24,9 +25,10 @@
 .Stories .story span {
   position: absolute;
   z-index: 999;
-  color: var(--white-color);
+  color: #fff;
   bottom: 10px;
   left: 10px;
+  transition: var(--main-transition);
 }
 .Stories .story .AddNewStory {
   position: absolute;
