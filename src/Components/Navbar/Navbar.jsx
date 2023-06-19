@@ -24,9 +24,17 @@ function Navbar({ HandleLogOut }) {
     if (Theme === "Light") {
       document.documentElement.style.setProperty("--white-color", "#fff");
       document.documentElement.style.setProperty("--black-color", "#1d1d1d");
+      document.documentElement.style.setProperty(
+        "--main-page-color",
+        "#f1f5f9"
+      );
     } else {
       document.documentElement.style.setProperty("--white-color", "#1d1d1d");
       document.documentElement.style.setProperty("--black-color", "#fff");
+      document.documentElement.style.setProperty(
+        "--main-page-color",
+        "#111111"
+      );
     }
   }, [Theme]);
 

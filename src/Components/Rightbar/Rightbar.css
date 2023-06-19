@@ -1,0 +1,108 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Root
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+@import url("./../../css/root.css");
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# right Bar
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.rightBar {
+  position: sticky;
+  min-width: 500px;
+  top: 50px;
+  height: calc(100vh - 50px);
+  padding: 20px;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: transparent;
+  transition: var(--main-transition);
+  box-shadow: 1px 5px 5px 2px var(--white-alt);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+@media (max-width: 1200px) {
+  .rightBar {
+    display: none;
+  }
+}
+.rightBar::-webkit-scrollbar {
+  width: 0px;
+}
+.rightBar img {
+  position: relative;
+  min-width: 50px;
+  max-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.rightBar .Box {
+  position: relative;
+  width: 100%;
+  background-color: var(--white-color);
+  transition: var(--main-transition);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.rightBar .Box > span {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.rightBar .online-users {
+  position: relative;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  gap: 10px;
+}
+.rightBar .online-users .user .userInfo {
+  flex-direction: column;
+}
+.rightBar .Box .user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.rightBar .Box .user .userInfo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: var(--main-transition);
+}
+.rightBar .Box .user span {
+  color: var(--black-color);
+  transition: var(--main-transition);
+}
+.rightBar .Box .user .userInfo p {
+  display: flex;
+  flex-direction: column;
+  transition: var(--main-transition);
+}
+.rightBar .Box .user .buttons {
+  display: flex;
+  gap: 5px;
+}
+.rightBar .Box .user .buttons button {
+  padding: 4px 8px;
+  border: 0;
+  border-radius: 5px;
+  color: var(--white-color);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.rightBar .Box .user .buttons button.Follow {
+  background-color: #00a2ff;
+}
+.rightBar .Box .user .buttons button.dismiss {
+  background-color: #ff0000;
+}

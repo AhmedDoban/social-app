@@ -13,10 +13,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  border-bottom: 1px solid lightgray;
+  box-shadow: 0px 0px 5px 2px var(--white-color);
   height: 50px;
   background-color: var(--white-color);
   transition: var(--main-transition);
+  z-index: 999;
 }
 
 .Navbar .left .icon h1 {

@@ -1,7 +1,9 @@
 import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Sidebar from "../../Components/Sidebar/Sidebar";
-import "./Auth.css"
+import Rightbar from "../../Components/Rightbar/Rightbar";
+import Content from "./Content/Content";
+import "./Auth.css";
 function Auth({ SetAuthUser }) {
   /*************Logout***************** */
   const HandleLogOut = () => {
@@ -12,7 +14,11 @@ function Auth({ SetAuthUser }) {
   return (
     <div className="Auth">
       <Navbar HandleLogOut={HandleLogOut} />
-      <Sidebar />
+      <div className="content-auth">
+        <Sidebar />
+        <Content />
+        <Rightbar />
+      </div>
     </div>
   );
 }

@@ -4,7 +4,12 @@
 .Auth {
   position: relative;
   width: 100%;
-  background-color: var(--white-color);
+  background-color: var(--main-page-color);
   transition: var(--main-transition);
   min-height: 100vh;
+}
+.Auth .content-auth {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }

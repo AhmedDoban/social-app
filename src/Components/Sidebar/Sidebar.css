@@ -7,17 +7,18 @@
 ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
 .Sidebar {
   position: sticky;
-  flex: 2;
-  width: 250px;
+  min-width: 250px;
   top: 50px;
   height: calc(100vh - 50px);
   overflow: hidden;
   overflow-y: auto;
-  border-right: 1px solid lightgrey;
+  background-color: var(--white-color);
+  transition: var(--main-transition);
+  box-shadow: 1px 5px 5px 2px var(--white-alt);
 }
 @media (max-width: 992px) {
   .Sidebar {
-    width: fit-content;
+    min-width: fit-content;
   }
 }
 .Sidebar::-webkit-scrollbar {
@@ -28,8 +29,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-
+  gap: 5px;
   transition: var(--main-transition);
   width: 100%;
 }
@@ -55,6 +55,15 @@
   align-items: center;
   gap: 15px;
   transition: var(--main-transition);
+  cursor: pointer;
+  padding: 8px 4px;
+  border-radius: 5px;
+}
+.Sidebar .menu .data:hover {
+  background-color: var(--black-color);
+}
+.Sidebar .menu .data:hover span {
+  color: var(--white-color);
 }
 .Sidebar .menu .data img {
   position: relative;
