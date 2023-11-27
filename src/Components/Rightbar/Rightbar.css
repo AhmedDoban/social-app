@@ -7,7 +7,7 @@
 ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
 .rightBar {
   position: sticky;
-  min-width: 500px;
+  min-width: 350px;
   top: 50px;
   height: calc(100vh - 50px);
   padding: 20px;
@@ -15,7 +15,6 @@
   overflow-y: auto;
   background-color: transparent;
   transition: var(--main-transition);
-  box-shadow: 1px 5px 5px 2px var(--white-alt);
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -30,9 +29,9 @@
 }
 .rightBar img {
   position: relative;
-  min-width: 50px;
-  max-width: 50px;
-  height: 50px;
+  min-width: 35px;
+  max-width: 35px;
+  height: 35px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -69,6 +68,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 5px;
 }
 .rightBar .Box .user .userInfo {
@@ -98,14 +98,16 @@
   border-radius: 5px;
   color: var(--white-color);
   font-weight: 600;
+  font-size: 14px;
   cursor: pointer;
   transition: var(--main-transition);
 }
 .rightBar .Box .user .buttons button.Follow {
-  background-color: #00a2ff;
+  background-color: var(--main-color);
 }
 .rightBar .Box .user .buttons button.dismiss {
-  background-color: #ff0000;
+  background-color: var(--main-page-color);
+  color: var(--black-color);
 }
 .rightBar .Box .user .online {
   position: absolute;

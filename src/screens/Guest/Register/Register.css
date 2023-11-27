@@ -12,7 +12,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(193, 190, 255);
+  background-image: url("../../../Imgs/blob_microsoft.svg");
+  background-repeat: no-repeat;
+    background-size: cover;
 }
 .Register .card {
   position: relative;
@@ -37,7 +39,7 @@
 .Register .card .left {
   position: relative;
   width: 100%;
-  background-image: url(https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600);
+  background-image: url("../../../Imgs/Register.jpeg");
   background-size: cover;
   padding: 50px;
   display: flex;

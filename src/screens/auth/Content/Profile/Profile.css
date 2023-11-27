@@ -103,8 +103,14 @@
   color: var(--black-color);
   transition: var(--main-transition);
 }
-.Profile .Informationm .content .other-info p:hover {
-  color: var(--main-color);
+.Profile .Informationm .content .other-info p.message {
+  background-color: var(--main-color);
+  width: 80px;
+  padding: 4px 12px;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: var(--white-color);
 }
 .Profile .Informationm .content .other-info button {
   position: relative;

@@ -38,24 +38,10 @@ function Profile() {
           </div>
           {/******************** other -  info*******************/}
           <div className="other-info">
-            <p>
-              <i className="fa-solid fa-location-dot" />
-              <span>Cairo</span>
-            </p>
-            <p>
-              <i className="fa-solid fa-earth-americas" />
-              <span>Egypt</span>
-            </p>
-          </div>
-          {/******************** other -  info*******************/}
-          <div className="other-info">
-            <p>
-              <i className="fa-regular fa-envelope"></i>
+            <p className="message">
+              <i className="fa-regular fa-envelope" />
             </p>
             <button>Follow</button>
-            <p>
-              <i className="fa-solid fa-ellipsis-vertical"></i>
-            </p>
           </div>
         </div>
       </div>
